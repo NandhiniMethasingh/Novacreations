@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden; 
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+  opacity: 0.7; 
+}
+
+
+.content {
+  position: relative;
+  z-index: 1; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Text Transformations */
+h1, h2 {
+  text-transform: uppercase;
+}
+
+/* Shadows */
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Darker shadow for better readability */
+}
+
+/* CSS Transitions */
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.content {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      font-size: 14px;
+  }
+}

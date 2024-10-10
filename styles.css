@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    background-image: url('im3.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Border Image */
+img {
+    border: 2px solid #007bff;
+    border-radius: 4px;
+}
+
+/* Text Transformations */
+h1, h2 {
+    text-transform: uppercase;
+}
+
+/* Shadows */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS Transitions */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    animation: fadeIn 2s ease-in;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 14px;
+    }
+}
